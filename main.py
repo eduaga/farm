@@ -5,6 +5,7 @@ class Animal:
   weight = 0
   can_eat = 0
   animal_name = ''
+  sound = ''
 
   def __init__(self, name, color, weight):
     self.color = color
@@ -13,7 +14,7 @@ class Animal:
 
   def feed(self):
     self.hungry = False
-    self.weight += can_eat
+    self.weight += self.can_eat
     return 'Not hungry anymore'
 
   def make_sound(self):
@@ -130,6 +131,7 @@ if not sheep1.is_sheared:
 
 get_heaviest(goat1, grey_goose, cow1)
 sum_weight(white_goose, grey_goose, goat1, goat2, cow1, sheep1, sheep2, hen1, hen2, duck1)
+print(duck1.make_sound())
 
 
 
